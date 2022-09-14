@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avisão em Json</title>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="lottie" id="lottie"></div>
+        </div>
+        <div class="texto">
+            <h2>Avião em Json</h2>
+            <p>Ilustração: Procreate</p>
+            <p>Animação: After Effects</p>
+        </div>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js"></script>
+
+    <script>
+
+        var params = {
+            container: document.getElementById('lottie'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: "./data.json"
+        };
+
+        var anim = lottie.loadAnimation(params);
+
+    </script>
+</body>
+
+</html>
